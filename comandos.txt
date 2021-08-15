@@ -4,3 +4,10 @@ yarn tsc --init
 yarn add express
 yarn add @types/express -D
 yarn add ts-node-dev -D
+yarn add typeorm reflect-metadata sqlite3
+yarn typeorm migration:create -n CreateUsers
+yarn typeorm migration:run
+yarn typeorm migration:revert
+yarn typeorm entity:create -n User
+yarn add uuid
+yarn add @types/uuid -D
